@@ -1,17 +1,19 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Student, SDN 2 SIDAMULIH
+  from: 2009
+  to: 2015
+  description: My elementary school.
 
-- title: Software Engineer, Google, UK
+- title: Student, SMP PASUNDAN SIDAMULIH
+  from: 2015
+  to: 2018
+  description: My junior high school.      
+               
+- title: Student, SMKN 2 BANJAR
   from: 2018
+  to: 2021
+  description: My vocational school, this is the most memorable school for me.
+               
+- title: Student, GALUH UNIVERSITY, Ciamis
+  from: 2021
   to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description: Now I'm studying here and I'm majoring in Information Systems
