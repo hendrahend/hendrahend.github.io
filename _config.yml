@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Hendra Hendriana
 description         : Ciamis, West Java, ID
-baseurl             : "/progate.github.io"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             : "/home"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : hendra-hendriana/progate.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : true                             # Opens external URLs in new tab (works for posts, projects and navbar only)
@@ -22,16 +22,16 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Hendra Hendriana
-  image             : https://i.imgur.com/uyDNQnn.jpg
-  behance           : your_username
+  image             : https://github.com/hendra-hendriana/home/blob/main/photo.jpg
+# behance           : your_username
 # dribbble          : your_username
   email             : hendh3565@gmail.com
-  facebook          : hendra.hendz
+  facebook          : hendra.hendz.3
   github            : hendra-hendriana
 # gitlab            : your_username
   instagram         : hendra_hend74
 # kaggle            : your_username
-  linkedin          : your_username
+# linkedin          : your_username
   medium            : hanskasep25
 # soundcloud        : your_username
 # spotify           : your_username
