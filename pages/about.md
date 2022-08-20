@@ -18,3 +18,8 @@ Hi I am **{{ site.author.name }}** :wave:,<br>
 <div class="row">
 {% include about/timeline.html %}
 </div>
+
+<p align="center">
+<small class="text-muted mb-2">
+  Theme by <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+</small>
