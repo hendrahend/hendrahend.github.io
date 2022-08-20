@@ -40,7 +40,7 @@ author:
 # twitch            : your_username
   twitter           : hans_kasep
 # vimeo             : your_username
-  youtube           : UChkriZIwS1-02L4t-4BQXtg
+  youtube           : channel/UChkriZIwS1-02L4t-4BQXtg
 # keybase           : your_username
 
 
@@ -53,9 +53,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
-
 
 ### Disqus ###
 disqus:
@@ -76,11 +73,6 @@ defaults:
       type: "projects"
     values:
       layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
   - scope:
       path: ""
       type: "posts"
