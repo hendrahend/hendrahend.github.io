@@ -36,7 +36,6 @@ Sebelum ke instalasi dan konfigurasi , kita akan melakukan mounting HDD/FD terle
 2. Lalu Colokan HDD/FD tersebut ke Router
 3. Akses ip router di browser , buka **System > Mount Points** atau bisa juga cek di **System > Disk Manager** cek apakah HDD/FD sudah ter-mount
 > Jika belum ada package **Disk Manager** , bisa install manual dengan perintah: `opkg update && opkg install luci-app-diskman`
-4. 
 <br>
 
 ### Instalasi
@@ -50,8 +49,9 @@ kemudian copy & pastekan command berikut di terminal
 ```
 opkg update && opkg install samba4-server luci-app-samba4 ntfs-3g
 ```
+Atau bisa juga install dengan cara akses ip router di browser masuk ke menu **System > Software** kemudian update terlebih dahulu dengan memilih **Update List** kemudian cari package **samba4-server, luci-app-samba4, ntfs-3g** kemudian install package tersebut.
+
 <br>
-Atau bisa juga install dengan cara akses ip router di browser masuk ke menu **System > Software** kemudian update terlebih dahulu dengan memilih **Update List** kemudian cari package samba4-server, luci-app-samba4, ntfs-3g, kemudian install package tersebut.
 
 ### Konfigurasi
 Lanjut ke step konfigurasi .
@@ -93,14 +93,15 @@ smbd -D
 nmbd -D
 ```
 > Sesuaikan `/sda1` dan `/mnt/sda1` dengan letak HDD/FD kalian
+<br>
 Simpan dengan CTRL+X , y , lalu enter.
-Pastikan samba server enable dengan perintah terminal:
+Pastikan samba server enable dengan perintah:
 ```
 /etc/init.d/samba4 enable
 /etc/init.d/samba4 start
 ```
 
-Reboot router openwrt dengan command
+Reboot router openwrt dengan perintah:
 ```
 reboot
 ```
