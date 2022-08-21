@@ -3,11 +3,12 @@ title: Cara Install dan Konfigurasikan Samba Server di OpenWrt
 tags: [OpenWrt]
 style: fill
 color: danger
-description: Samba adalah program yang bersifat sumber terbuka yang menyediakan layanan berbagi berkas dan berbagi alat pencetak. [Wikipedia](https://id.wikipedia.org/wiki/Samba_(perangkat_lunak))
+description: Samba adalah program yang bersifat sumber terbuka yang menyediakan layanan berbagi berkas dan berbagi alat pencetak. [Wikipedia]
 ---
 
 Ditulis Oleh: Hendra Hendriana
 
+![](https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/1.png)
 
 {% capture list_items %}
 Persyaratan
@@ -25,12 +26,11 @@ Credit
 - HDD/FD Sebagai media penyimpanan
 - Akses Internet
 
-
-Sebelum ke instalasi dan konfigurasi , kita akan melakukan mounting HDD/FD terlebih dahulu , disini saya memakai Flashdrive sebagai media penyimpanan nya.
-
 <br>
 
 ### Mounting HDD/FD
+Sebelum ke instalasi dan konfigurasi , kita akan melakukan mounting HDD/FD terlebih dahulu , disini saya memakai Flashdrive sebagai media penyimpanan nya.
+
 1. Siapkan HDD/FD untuk media penyimpanannya, lalu format HDD/FD tersebut dengan format NTFS
 2. Lalu Colokan HDD/FD tersebut ke Router
 
@@ -109,5 +109,8 @@ Thanks To:
 Youtube, [Indonesian Tech Channel](https://www.youtube.com/c/IndonesianTechChannel)
 <br>
 Youtube, [aryobrokolly](https://www.youtube.com/c/aryobrokolly)
+
+<br>
+<br>
 
 
