@@ -7,9 +7,10 @@ description: Samba adalah program yang bersifat sumber terbuka yang menyediakan 
 ---
 
 Ditulis Oleh: Hendra Hendriana
-
+<br>
 ![](https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/1.png)
-
+<br>
+<br>
 {% capture list_items %}
 Persyaratan
 Mounting HDD/FD
