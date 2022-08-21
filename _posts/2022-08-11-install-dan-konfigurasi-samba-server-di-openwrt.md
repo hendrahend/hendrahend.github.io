@@ -93,6 +93,7 @@ smbd -D
 nmbd -D
 ```
 > Sesuaikan `/sda1` dan `/mnt/sda1` dengan letak HDD/FD kalian
+
 <br>
 
 Simpan dengan CTRL+X , y , lalu enter.
