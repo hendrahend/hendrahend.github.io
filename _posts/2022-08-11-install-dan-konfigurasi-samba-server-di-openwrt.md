@@ -34,8 +34,10 @@ Sebelum ke instalasi dan konfigurasi , kita akan melakukan mounting HDD/FD terle
 2. Lalu Colokan HDD/FD tersebut ke Router
 3. Akses ip router di browser , buka **System > Mount Points** atau bisa juga cek di **System > Disk Manager** cek apakah HDD/FD sudah ter-mount
 > Jika belum ada package **Disk Manager** , bisa install manual dengan perintah: `opkg update && opkg install luci-app-diskman`
+
 <br>
 Lanjut tahap instalasi
+
 <br>
 
 ### Instalasi
