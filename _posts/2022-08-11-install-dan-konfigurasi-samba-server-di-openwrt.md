@@ -9,8 +9,7 @@ description: Samba adalah program yang bersifat sumber terbuka yang menyediakan 
 Ditulis Oleh: Hendra Hendriana
 
 <br>
-![](https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/1a.png)
-<br>
+<br><center><img height="70px" width="80%" src="https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/1a.png" ></center><br>
 <br>
 {% capture list_items %}
 Persyaratan
