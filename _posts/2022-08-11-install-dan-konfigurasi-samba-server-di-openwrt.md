@@ -9,8 +9,6 @@ description: Samba adalah program yang bersifat sumber terbuka yang menyediakan 
 Ditulis Oleh: Hendra Hendriana
 
 <br>
-
-<br>
 {% capture list_items %}
 Persyaratan
 Mounting HDD/FD
@@ -36,6 +34,8 @@ Sebelum ke instalasi dan konfigurasi , kita akan melakukan mounting HDD/FD terle
 2. Lalu Colokan HDD/FD tersebut ke Router
 3. Akses ip router di browser , buka **System > Mount Points** atau bisa juga cek di **System > Disk Manager** cek apakah HDD/FD sudah ter-mount
 > Jika belum ada package **Disk Manager** , bisa install manual dengan perintah: `opkg update && opkg install luci-app-diskman`
+
+<br>
 <br>
 
 ### Instalasi
@@ -116,7 +116,6 @@ Youtube, [Indonesian Tech Channel](https://www.youtube.com/c/IndonesianTechChann
 <br>
 Youtube, [aryobrokolly](https://www.youtube.com/c/aryobrokolly)
 
-<br>
 <br>
 
 
