@@ -9,9 +9,7 @@ description: Samba adalah program yang bersifat sumber terbuka yang menyediakan 
 Ditulis Oleh: Hendra Hendriana
 
 <br>
-<br>
-<center><img height="500px" width="30%" src="https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/1a.png"></center>
-<br>
+
 <br>
 {% capture list_items %}
 Persyaratan
@@ -36,7 +34,9 @@ Sebelum ke instalasi dan konfigurasi , kita akan melakukan mounting HDD/FD terle
 
 1. Siapkan HDD/FD untuk media penyimpanannya, lalu format HDD/FD tersebut dengan format NTFS
 2. Lalu Colokan HDD/FD tersebut ke Router
-
+3. Akses ip router di browser , buka **System > Mount Points** atau bisa juga cek di **System > Disk Manager** cek apakah HDD/FD sudah ter-mount
+> Jika belum ada package **Disk Manager** , bisa install manual dengan perintah: `opkg update && opkg install luci-app-diskman`
+4. 
 <br>
 
 ### Instalasi
@@ -51,6 +51,7 @@ kemudian copy & pastekan command berikut di terminal
 opkg update && opkg install samba4-server luci-app-samba4 ntfs-3g
 ```
 <br>
+Atau bisa juga install dengan cara akses ip router di browser masuk ke menu **System > Software** kemudian update terlebih dahulu dengan memilih **Update List** kemudian cari package samba4-server, luci-app-samba4, ntfs-3g, kemudian install package tersebut.
 
 ### Konfigurasi
 Lanjut ke step konfigurasi .
@@ -87,10 +88,11 @@ nano /etc/rc.local
 sebelum "exit 0" tambahkan 
 ```
 sleep 1
-ntfs-3g /yourhdd /mount-yourhdd -o rw,lazytime,noatime,big_writes
+ntfs-3g /sda1 /mnt/sda1 -o rw,lazytime,noatime,big_writes
 smbd -D
 nmbd -D
 ```
+> Sesuaikan `/sda1` dan `/mnt/sda1` dengan letak HDD/FD kalian
 Simpan dengan CTRL+X , y , lalu enter.
 Pastikan samba server enable dengan perintah terminal:
 ```
