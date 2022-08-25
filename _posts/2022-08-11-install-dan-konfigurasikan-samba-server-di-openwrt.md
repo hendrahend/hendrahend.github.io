@@ -6,7 +6,7 @@ color: danger
 description: Samba adalah program yang bersifat sumber terbuka yang menyediakan layanan berbagi berkas dan berbagi alat pencetak. [Wikipedia]
 ---
 
-Ditulis Oleh: Hendra Hendriana
+Ditulis Oleh: [Hendra Hendriana](https://hendra-hendriana.github.io/about)
 
 <br>
 {% capture list_items %}
@@ -14,6 +14,7 @@ Persyaratan
 Mounting HDD/FD
 Instalasi
 Konfigurasi
+Uninstalasi
 Credit
 {% endcapture %}
 {% include elements/list.html title="Daftar Isi" type="toc" %}
@@ -33,6 +34,7 @@ Sebelum ke instalasi dan konfigurasi , kita akan melakukan mounting HDD/FD terle
 1. Siapkan HDD/FD untuk media penyimpanannya, lalu format HDD/FD tersebut dengan format NTFS
 2. Lalu Colokan HDD/FD tersebut ke Router
 3. Akses ip router di browser , buka **System > Mount Points** atau bisa juga cek di **System > Disk Manager** cek apakah HDD/FD sudah ter-mount
+
 > Jika belum ada package **Disk Manager** , bisa install manual dengan perintah: `opkg update && opkg install luci-app-diskman`
 
 <br>
@@ -109,7 +111,20 @@ Reboot router openwrt dengan perintah:
 ```
 reboot
 ```
-Akses samba server via PC dengan cara Windows+R dan masukkan ip router kalian.
+Akses samba server via PC dengan cara Windows+R dan masukkan ip router kalian, atau buka File Explorer , masuk ke Tab Network , buka ip router kalian. 
+<br>
+{% capture carousel_images %}
+https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/Screenshot_20220825_104455.png
+https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/Screenshot_20220825_104802.png
+{% endcapture %}
+{% include elements/carousel.html %}
+
+<br>
+
+### Uninstalasi
+```
+opkg remove samba4-server luci-app-samba4
+```
 
 <br>
 
