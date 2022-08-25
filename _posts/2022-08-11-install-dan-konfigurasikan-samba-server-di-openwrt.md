@@ -3,7 +3,7 @@ title: Cara Install dan Konfigurasikan Samba Server di OpenWrt
 tags: [OpenWrt]
 style: fill
 color: danger
-description: Samba adalah program yang bersifat sumber terbuka yang menyediakan layanan berbagi berkas dan berbagi alat pencetak. [Wikipedia]
+description: Samba adalah program yang bersifat open source yang menyediakan layanan berbagi berkas. [Wikipedia]
 ---
 
 Ditulis Oleh: [Hendra Hendriana](https://hendra-hendriana.github.io/about)
