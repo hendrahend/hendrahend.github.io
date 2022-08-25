@@ -11,6 +11,7 @@ Ditulis Oleh: [Hendra Hendriana](https://hendra-hendriana.github.io/about)
 <br>
 
 {% capture list_items %}
+Penyebab Masalah
 Cara Pertama
 Cara Kedua
 Cara Ketiga
@@ -19,11 +20,14 @@ Cara Ketiga
 
 <br>
 
+### Penyebab Masalah
 Pernahkah kalian mengalami Taskbar dan Tombol Windows Not Responding di Windows?, jika pernah, biasanya itu disebabkan oleh Update Sistem yang tidak berhasil atau bisa juga disebabkan oleh program program yang tidak berjalan dengan baik di Windows .
+<br>
 <br>
 Lalu bagaimana cara mengatasinya? , disini ada beberapa solusi jika kalian mengalami hal seperti yang di jelaskan di atas , saya sendiri pernah mengalami hal yang serupa , dan berhasil menggunakan cara yang ketiga .
 
 <br>
+
 ### Cara Pertama
 Cara Pertama yaitu dengan menggunakan cmd . Karena Tombol Start/Windows Tidak berfungsi , maka kita tidak bisa menggunakan **Windows + R** atau mencari cmd di pencarian .
 - Buka cmd melalui File Explorer.
