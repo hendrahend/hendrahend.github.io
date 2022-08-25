@@ -33,7 +33,13 @@ Cara Pertama yaitu dengan menggunakan cmd . Karena Tombol Start/Windows Tidak be
 - Buka cmd melalui File Explorer.
 - Buka File Explorer melalui **Reycle Bin**, masuk ke Direktori `C:Users/{namauser}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools/`
 - Klik kanan pada **Command Prompt > Run as Administrator**
-- Ketikan `sfc /scannow` tunggu prosesnya sampai selesai,
+- Ketikan `sfc /scannow` tunggu prosesnya sampai selesai.
+<br>
+{% capture carousel_images %}
+https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/Screenshot%202022-08-25%20184816.png
+https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/Screenshot%202022-08-25%20184825.png
+{% endcapture %}
+{% include elements/carousel.html %}
 
 <br>
 
