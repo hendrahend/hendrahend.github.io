@@ -6,7 +6,7 @@ color: primary
 description: Mengatasi Taskbar Not Responding di Windows .
 ---
 
-Ditulis Oleh: Hendra Hendriana
+Ditulis Oleh: [Hendra Hendriana](https://hendra-hendriana.github.io/about)
 
 <br>
 
