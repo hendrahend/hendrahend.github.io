@@ -1,7 +1,7 @@
-- name: HTML/CSS
+- name: HTML5/CSS3
   percentage: 10
   color: danger
 
-- name: Python
-  percentage: 5
+- name: Javascript
+  percentage: 10
   color: secondary
