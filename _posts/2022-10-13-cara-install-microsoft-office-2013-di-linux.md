@@ -1,7 +1,7 @@
 ---
 title: Cara Install Microsoft Office 2013 di Linux (Ubuntu 20.04)
 style: fill
-color: info
+color: success
 description: Install Microsoft Office 2013 (Ms Word, Ms PowerPoint, Ms Outlook, Ms OneNote) dengan PlayOnLinux
 ---
 
@@ -22,15 +22,28 @@ Pertama Install PlayOnLinux
 ```
 sudo apt-get install PlayOnLinux
 ```
-Lalu Install WinBind
+Install Winbind
 ```
 sudo apt-get install winbind
+```
+Install wine
+```
+wget https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
+
+sudo apt-get update
+sudo apt-get install wine-stable winehq-stable 
 ```
 
 <br>
 
-
-
+### Konfigurasi
+1. Buka PlayOnLinux > Tools > Manage Wine Version . Install wine 3.1 & 2.20-stagging
+2. Buka tab Configure > Klik **New** > 32bit instalation > pilih wine 3.1 > Lalu isi nama virtual drive dengan **Office2013**
+3. Klik **Office2013** > pilih tab Miscellanous > Open a shell > Lalu run script dibawah
+4. Jika sudah selesai, pilih tab General > ubah wine version ke 2.20-stagging
+<br>
 
 ```shell
 #!/bin/bash
