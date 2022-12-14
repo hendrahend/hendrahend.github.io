@@ -2,7 +2,7 @@
 title: Cara Menambahkan Microsoft Access ke Office 365 Home & Student
 tags: [Office, Windows]
 style: fill
-color: success
+color: secondary
 description: Add Microsoft Access
 ---
 
