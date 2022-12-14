@@ -2,7 +2,7 @@
 title: Cara Menambahkan Microsoft Access ke Office 365 Home & Student
 style: fill
 color: success
-description: -
+description: Add Microsoft Access
 ---
 
 Ditulis Oleh: [Hendra Hendriana](https://hendra-hendriana.github.io/about)
@@ -10,6 +10,7 @@ Ditulis Oleh: [Hendra Hendriana](https://hendra-hendriana.github.io/about)
 <br>
 {% capture list_items %}
 Persyaratan
+Instalasi
 {% endcapture %}
 {% include elements/list.html title="Daftar Isi" type="toc" %}
 
