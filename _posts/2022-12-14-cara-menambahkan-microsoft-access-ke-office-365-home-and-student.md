@@ -1,5 +1,6 @@
 ---
 title: Cara Menambahkan Microsoft Access ke Office 365 Home & Student
+tags: [Office, Windows]
 style: fill
 color: success
 description: Add Microsoft Access
@@ -46,7 +47,7 @@ Menjadi :
   </Add>
 ```
 
-> Sesuaikan dengan Sistem Operasi kalian , jika x64/64 bit edit configuration-x64, jika x86/32 bit edit configuration-x86, jangan lupa untuk mengubah **OfficeClientEdition="32"** jika kalian OS kalian 32 bit
+> Sesuaikan dengan Sistem Operasi kalian , jika x64/64 bit edit configuration-x64, jika x86/32 bit edit configuration-x86, jangan lupa untuk mengubah **OfficeClientEdition="32"** jika OS kalian 32 bit
 
 4. Buka powershell di folder tersebut dengan klik shift + klik kanan, jalankan script dibawah
 ```
@@ -54,59 +55,33 @@ Menjadi :
 ```
 5. nanti otomatis akan ada instalasi microsoft access, tunggu sampai selesai
 6. untuk mengaktifkan lisensi , buka cmd run as admin, tempel script dibawah
-```
+
 Windows 10 :
-
+```
 if exist "C:\Program Files\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files\Microsoft Office\Office16"
-
 if exist "C:\Program Files (x86)\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files (x86)\Microsoft Office\Office16"
-
- 
 
 cscript ospp.vbs /inslic:"..\root\Licenses16\Access2019VL_KMS_Client_AE-ppd.xrm-ms"
-
 cscript ospp.vbs /inslic:"..\root\Licenses16\Access2019VL_MAK_AE-ul-oob.xrm-ms"
-
 cscript ospp.vbs /inslic:"..\root\Licenses16\Access2019VL_MAK_AE-ul-phn.xrm-ms"
-
 cscript ospp.vbs /inslic:"..\root\Licenses16\Access2019VL_KMS_Client_AE-ul.xrm-ms"
-
 cscript ospp.vbs /inslic:"..\root\Licenses16\Access2019VL_MAK_AE-pl.xrm-ms"
-
 cscript ospp.vbs /inslic:"..\root\Licenses16\Access2019VL_MAK_AE-ppd.xrm-ms"
-
 cscript ospp.vbs /inslic:"..\root\Licenses16\Access2019VL_KMS_Client_AE-ul-oob.xrm-ms"
-
- 
-
 cscript ospp.vbs /inpkey:9N9PT-27V4Y-VJ2PD-YXFMF-YTFQT
-
 cscript ospp.vbs /sethst:kms.teevee.asia
-
 cscript ospp.vbs /act
-
+```
  
-
 Windows 11 :
-
- 
-
+```
 if exist "C:\Program Files\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files\Microsoft Office\Office16"
-
 if exist "C:\Program Files (x86)\Microsoft Office\Office16\ospp.vbs" cd /d "C:\Program Files (x86)\Microsoft Office\Office16"
 
- 
-
 cscript ospp.vbs /inpkey:9N9PT-27V4Y-VJ2PD-YXFMF-YTFQT
-
 cscript ospp.vbs /sethst:kms.teevee.asia
-
 cscript ospp.vbs /act
-
 ```
 
 DONE
-
-<br>
-
 
