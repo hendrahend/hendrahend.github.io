@@ -13,6 +13,7 @@ Ditulis Oleh: [Hendra Hendriana](https://hendra-hendriana.github.io/about)
 Persyaratan
 Step Pertama
 Step Kedua
+Step Terakhir
 Sumber & Referensi
 {% endcapture %}
 {% include elements/list.html title="Daftar Isi" type="toc" %}
@@ -21,20 +22,20 @@ Sumber & Referensi
 
 ### Persyaratan
 - Akses Internet
-- Linux / VmWare dengan OS Linux
+- Linux / VM dengan OS Linux
 
 <br>
 
 ### Step Pertama
 1. Download OpenWrt ImageBuilder 21.02.5
 ```
-https://downloads.openwrt.org/releases/21.02.5/targets/armvirt/64/openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64.tar.xz
+wget https://downloads.openwrt.org/releases/21.02.5/targets/armvirt/64/openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64.tar.xz
 ```
-> Jika ingin memakai versi lain bisa download di `https://downloads.openwrt.org/releases/` sesuaikan targetnya dengan sbc kalian.
+> Jika ingin memakai versi lain bisa download di `https://downloads.openwrt.org/releases/` .
 <br>
-2. Extract dan masuk ke foldernya
+2. Extract dan masuk ke folder **openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64**
 ```
-tar -xfv openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64.tar.xz && cd openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64.tar.xz
+tar -Jxf openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64.tar.xz && cd openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64
 ```
 3. Sesuaikan Config, Files, Packages . Kemudian jika sudah disesuaikan build dengan perintah berikut
 ```
@@ -66,7 +67,6 @@ sudo apt-get install -y $(curl -fsSL https://raw.githubusercontent.com/ophub/aml
 <br>
 Arch
 ```
-pacman -Syyy
 pacman -S base-devel
 ```
 2. Clone Repo Ophub
@@ -86,13 +86,11 @@ sudo ./make -b s905x -k 5.15.94 -s 1024
 <br>
 
 ### Step Terakhir
+Last step yaitu burn firmware yang sudah kalian buat, bisa menggunakan Rufus atau Balena Etcher
 
 ### Sumber & Referensi
 <br>
-Youtube, [Indonesian Tech Channel](https://www.youtube.com/c/IndonesianTechChannel)
-<br>
-Youtube, [aryobrokolly](https://www.youtube.com/c/aryobrokolly)
-
+[Radenku.com](https://radenku.com/build-custom-firmware-openwrt-stb-amlogic/)
 <br>
 
 
