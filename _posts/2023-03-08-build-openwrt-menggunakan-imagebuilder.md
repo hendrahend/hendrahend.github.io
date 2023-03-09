@@ -35,9 +35,15 @@ wget https://downloads.openwrt.org/releases/21.02.5/targets/armvirt/64/openwrt-i
 <br>
 2. Extract dan masuk ke folder **openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64**
 ```
-tar -Jxf openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64.tar.xz && cd openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64
+tar -J -x -f openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64.tar.xz && cd openwrt-imagebuilder-21.02.5-armvirt-64.Linux-x86_64
 ```
 3. Sesuaikan Config, Files, Packages . Kemudian jika sudah disesuaikan build dengan perintah berikut
+```
+make image PROFILE="profile-name" \
+PACKAGES="pkg1 pkg2 pkg3 -pkg4 -pkg5 -pkg6" \
+FILES="files"
+```
+Contoh build untuk Amlogic S905x
 ```
 make image PROFILE="Default" PACKAGES="\
 cgi-io libiwinfo libiwinfo-data libiwinfo-lua liblua liblucihttp liblucihttp-lua \
@@ -51,7 +57,7 @@ kmod-ath9k-htc kmod-cfg80211 kmod-crypto-acompress kmod-crypto-crc32c kmod-crypt
 kmod-fs-btrfs kmod-mac80211 wireless-tools wpa-cli wpa-supplicant \
 " FILES="files"
 ```
-4. Hasil OpenWrt akan berada di /bin/targets/armvirt/64/
+4. Hasil OpenWrt akan berada di **/bin/targets/armvirt/64/**
 
 <br>
 
@@ -64,13 +70,11 @@ sudo apt-get update -y
 sudo apt-get full-upgrade -y
 sudo apt-get install -y $(curl -fsSL https://raw.githubusercontent.com/ophub/amlogic-s9xxx-armbian/main/compile-kernel/tools/script/ubuntu2004-openwrt-depends)
 ```
-<br>
 Arch
 ```
 pacman -S base-devel
 ```
 2. Clone Repo Ophub
-*Clone Repo*
 ```
 git clone --depth 1 https://github.com/ophub/amlogic-s9xxx-openwrt.git
 ```
@@ -84,14 +88,14 @@ copy rootfs dari hasil build openwrt tadi ke folder amlogic-s9xxx-openwrt
 sudo ./make -b s905x -k 5.15.94 -s 1024
 ```
 <br>
-
 ### Step Terakhir
 Last step yaitu burn firmware yang sudah kalian buat, bisa menggunakan Rufus atau Balena Etcher
-
+<br>
 ### Sumber & Referensi
 <br>
 [Radenku.com](https://radenku.com/build-custom-firmware-openwrt-stb-amlogic/)
 <br>
+[OpenWrt](https://openwrt.org/docs/guide-user/additional-software/imagebuilder)
 
 
 
