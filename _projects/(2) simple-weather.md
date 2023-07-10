@@ -1,5 +1,5 @@
 ---
-name: Simple Weather App
+name: Simple Weather
 tools: 
 image: https://raw.githubusercontent.com/hendra-hendriana/hendra-hendriana.github.io/main/images/Project2.png
 description: Weather App using ReactJS
