@@ -2,7 +2,7 @@
 title: Build OpenWrt Menggunakan ImageBuilder
 tags: [OpenWrt]
 style: fill
-color: danger
+color: warning
 description: OpenWrt adalah sebuah sistem operasi distribusi GNU / Linux yang berbasis firmware. Sistem operasi ini digunakan untuk perangkat yang tertanam terutama pada perangkat router. [Wikipedia]
 ---
 
