@@ -1,9 +1,9 @@
 ---
-title: Build OpenWrt Menggunakan ImageBuilder
+title: 10 Script CMD Yang Mungkin Berguna Untuk Keperluanmu
 tags: [OpenWrt]
 style: fill
 color: danger
-description: 
+description: Script Command Prompt
 ---
 
 Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
