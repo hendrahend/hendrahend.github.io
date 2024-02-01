@@ -1,6 +1,6 @@
 ---
 title: 10 Script CMD Yang Mungkin Berguna Untuk Keperluanmu
-tags: [OpenWrt]
+tags: [windows]
 style: fill
 color: danger
 description: Script Command Prompt
