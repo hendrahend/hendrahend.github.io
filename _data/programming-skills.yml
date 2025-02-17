@@ -20,4 +20,4 @@
 
 - name: Git
   percentage: 30
-  color: dark
+  color: secondary
