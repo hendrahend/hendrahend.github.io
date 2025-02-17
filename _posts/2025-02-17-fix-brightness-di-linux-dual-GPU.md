@@ -3,7 +3,7 @@ title: Fix Brightness di Linux Dual GPU
 tags: [Linux]
 style: fill
 color: info
-description: Sedikit Cara Untuk Fix Brightness di Linux Jika Memakai Laptop Yang Memakai Dual GPU.
+description: Sedikit Cara Untuk Fix Brightness di Linux Jika Memakai Laptop Dual GPU.
 ---
 
 Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
