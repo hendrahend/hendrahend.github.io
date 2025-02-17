@@ -14,6 +14,7 @@ Selain itu, saya memiliki keterampilan di bidang pengolahan data, serta mampu be
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
+{% include about/skills.html title="Networking Skills" source=site.data.networking-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
