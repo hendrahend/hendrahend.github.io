@@ -11,8 +11,9 @@ Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
 <br>
 {% capture list_items %}
 Pendahuluan
-Pop!_OS
+PopOS
 Distro Linux Lain
+Update
 Sumber & Referensi
 {% endcapture %}
 {% include elements/list.html title="Daftar Isi" type="toc" %}
@@ -27,7 +28,7 @@ Setelah sana sini mencari solusi, ditemukan beberapa penyebab umum, seperti konf
 
 ---
 
-### Pop!_OS
+### PopOS
 
 Karena saya menggunakan distro PopOS!, saya hanya menemukan satu cara yang bisa dibilang agak kurang.., tetapi cukup oke lah daripada gak bisa atur brightnessnya :v.
 
@@ -35,7 +36,8 @@ Karena saya menggunakan distro PopOS!, saya hanya menemukan satu cara yang bisa 
 Langkah pertaka adalah cek driver GPU sudah terinstal dengan benar. PopOS! menggunakan builtin driver package yaitu
 
 ```bash
-system76-driver-nvidia
+nvidia-smi #cek driver nvidia 
+system76-driver-nvidia # install driver nvidia
 ```
 
 #### 2. Cek Display Output
@@ -132,11 +134,11 @@ Atur shortcut keyboard untuk menjalankan `inc.sh` dan `dec.sh`. Setiap distro bi
 
 ---
 
-## Distro Linux Lainnya
+### Distro Linux Lain
 
 Di beberapa forum Linux, metode berikut sering direkomendasikan:
 
-### 1. Edit GRUB
+#### 1. Edit GRUB
 Tambahkan parameter `acpi_video`:
 
 Buka konfigurasi GRUB:
@@ -166,11 +168,31 @@ sudo reboot
 
 ---
 
+### Update
+Update `19 Februari 2025`, akhirnya nemu buat fixnya.
+1. Edit kernel parameter dengan menambah salah satu pakai salah satu dibawah,
+- acpi_backlight=video
+- acpi_backlight=vendor
+- acpi_backlight=native
+
+```bash
+sudo kernelstub -a "acpi_backlight=native" # saya pakai native buat fixnya, kemudian reboot
+```
+
+2. Cek kernel parameter
+```bash
+cat /proc/cmdline
+```
+
+Jika kalian pake GRUB, tinggal edit grubnya sama seperti di **Distro Linux Lain** <br>
+Donee! 🚀
+
+
+--- 
+
 ## Sumber & Referensi
 
 - Temen
 - [Linux Mint Forum](https://forums.linuxmint.com/viewtopic.php?t=320955)
+- [Ubuntu Forum](https://askubuntu.com/questions/935585/nvidia-backlight-brightness-problem)
 
----
-
-Donee! 🚀
