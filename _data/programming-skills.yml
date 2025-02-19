@@ -1,21 +1,21 @@
 - name: HTML5/CSS3
-  percentage: 50
+  percentage: 35
   color: danger
 
 - name: Javascript
-  percentage: 30
+  percentage: 25
   color: warning
   
 - name: PHP
-  percentage: 30
+  percentage: 20
   color: primary
   
 - name: MySQL
-  percentage: 50
+  percentage: 40
   color: info
 
 - name: Laravel
-  percentage: 30
+  percentage: 25
   color: danger
 
 - name: Git

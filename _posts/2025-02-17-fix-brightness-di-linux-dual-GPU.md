@@ -170,16 +170,16 @@ sudo reboot
 
 ### Update
 Update `19 Februari 2025`, akhirnya nemu buat fixnya.
-1. Edit kernel parameter dengan menambah salah satu pakai salah satu dibawah,
-- acpi_backlight=video
-- acpi_backlight=vendor
-- acpi_backlight=native
+#### 1. Edit kernel parameter dengan menambah salah satu pakai salah satu dibawah
 
 ```bash
 sudo kernelstub -a "acpi_backlight=native" # saya pakai native buat fixnya, kemudian reboot
 ```
+- acpi_backlight=video
+- acpi_backlight=vendor
+- acpi_backlight=native
 
-2. Cek kernel parameter
+#### 2. Cek kernel parameter
 ```bash
 cat /proc/cmdline
 ```
