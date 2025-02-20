@@ -32,7 +32,7 @@ Setelah sana sini mencari solusi, ditemukan beberapa penyebab umum, seperti konf
 
 Karena saya menggunakan distro PopOS!, saya hanya menemukan satu cara yang bisa dibilang agak kurang.., tetapi cukup oke lah daripada gak bisa atur brightnessnya :v.
 
-#### 1. Cek Driver GPU
+##### 1. Cek Driver GPU
 Langkah pertaka adalah cek driver GPU sudah terinstal dengan benar. PopOS! menggunakan builtin driver package yaitu
 
 ```bash
@@ -40,14 +40,14 @@ nvidia-smi #cek driver nvidia
 system76-driver-nvidia # install driver nvidia
 ```
 
-#### 2. Cek Display Output
+##### 2. Cek Display Output
 Cek nama display output yang digunakan (biasanya eDP untuk layar laptop).
 
 ```bash
 xrandr --listmonitors
 ```
 
-#### 3. Edit Manual Brightness
+##### 3. Edit Manual Brightness
 Coba cek file path backlight untuk mengatur brightness secara manual:
 ```bash
 sudo nano /sys/class/backlight/... # sesuaikan dengan path yang sesuai
@@ -59,14 +59,14 @@ sudo nano /sys/class/backlight/nvidia_wmi_ec_backlight/brightness # coba ganti v
 
 Jika cara ini tidak berhasil, lanjut ke langkah berikutnya.
 
-#### 4. Gunakan `xrandr`
+##### 4. Gunakan `xrandr`
 Jika cara di atas tidak berhasil, gunakan `xrandr` :
 ```bash
 xrandr --output eDP --brightness 0.8 # eDP ganti sesuai poin no 2 
 ```
->Angka 0.7 bisa disesuaikan sesuai kebutuhan.
+>Angka 0.7 bisa disesuaikan.
 
-#### 5. Install `brightnessctl` dan Buat Script Bash
+##### 5. Install `brightnessctl` dan Buat Script Bash
 
 Install `brightnessctl` terlebih dahulu:
 
@@ -74,7 +74,7 @@ Install `brightnessctl` terlebih dahulu:
 sudo apt install brightnessctl
 ```
 
-Buat tiga script berikut untuk meningkatkan, menurunkan, dan merestore brightness:
+Buat tiga script berikut:
 
 **Script untuk meningkatkan brightness (`inc.sh`)**
 ```bash
@@ -112,7 +112,7 @@ Ubah permission script agar bisa dieksekusi:
 chmod +x inc.sh dec.sh res.sh
 ```
 
-#### 6. Tambahkan `brightnessctl` ke `sudoers`
+##### 6. Tambahkan `brightnessctl` ke `sudoers`
 
 Buka file sudoers:
 
@@ -127,7 +127,7 @@ namauser ALL=(ALL) NOPASSWD: /usr/bin/brightnessctl
 ```
 > `namauser` ganti sesuai username masing-masing
 
-#### 7. Buat Shortcut Keyboard
+##### 7. Buat Shortcut Keyboard
 Atur shortcut keyboard untuk menjalankan `inc.sh` dan `dec.sh`. Setiap distro biasanya memiliki pengaturan keyboard shortcut.
 
 > Panggil `res.sh` di startup application.
@@ -137,10 +137,6 @@ Atur shortcut keyboard untuk menjalankan `inc.sh` dan `dec.sh`. Setiap distro bi
 ### Distro Linux Lain
 
 Di beberapa forum Linux, metode berikut sering direkomendasikan:
-
-#### 1. Edit GRUB
-Tambahkan parameter `acpi_video`:
-
 Buka konfigurasi GRUB:
 
 ```bash
@@ -169,8 +165,8 @@ sudo reboot
 ---
 
 ### Update
-Update `19 Februari 2025`, akhirnya nemu buat fixnya.
-#### 1. Edit kernel parameter dengan menambah salah satu pakai salah satu dibawah
+Update `19 Februari 2025`, akhirnya nemu buat fixnya. <br>
+Edit kernel parameter dengan menambah salah satu dibawah
 
 ```bash
 sudo kernelstub -a "acpi_backlight=native" # saya pakai native buat fixnya, kemudian reboot
@@ -179,10 +175,8 @@ sudo kernelstub -a "acpi_backlight=native" # saya pakai native buat fixnya, kemu
 - acpi_backlight=vendor
 - acpi_backlight=native
 
-#### 2. Cek kernel parameter
-```bash
-cat /proc/cmdline
-```
+>`cat /proc/cmdline` untuk melihat kernel parameter <br>
+>`sudo kernelstub -d "acpi_backlight=native"` pakai -d untuk menghapus parameter
 
 Jika kalian pake GRUB, tinggal edit grubnya sama seperti di **Distro Linux Lain** <br>
 Donee! 🚀
