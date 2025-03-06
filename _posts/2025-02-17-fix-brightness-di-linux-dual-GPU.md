@@ -24,7 +24,7 @@ Sumber & Referensi
 
 Berawal dari masalah ketika menginstal beberapa distro Linux, tetapi brightness slider tidak berfungsi. Jika kalian menggunakan laptop dengan dual GPU (misalnya, AMD + NVIDIA) dan mengalami masalah yang sama, tenang anda tidak sendirian.
 
-Setelah sana sini mencari solusi, ditemukan beberapa penyebab umum, seperti konflik antara driver GPU dan power management. Artikel ini membahas solusi untuk mengatasi masalah tersebut.
+Setelah sana sini mencari solusi, akhirnya nemu fixnya di forum linux. Artikel ini membahas solusi untuk mengatasi masalah tersebut.
 
 ---
 
@@ -184,7 +184,7 @@ Donee! 🚀
 
 --- 
 
-## Sumber & Referensi
+### Sumber & Referensi
 
 - Temen
 - [Linux Mint Forum](https://forums.linuxmint.com/viewtopic.php?t=320955)
