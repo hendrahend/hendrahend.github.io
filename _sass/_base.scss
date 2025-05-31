@@ -4,6 +4,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  transition: background-color $theme-transition-duration $theme-transition-timing-function,
+              color $theme-transition-duration $theme-transition-timing-function;
 }
 
 .badge {
