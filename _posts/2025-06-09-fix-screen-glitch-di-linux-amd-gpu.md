@@ -61,6 +61,7 @@ Jika Anda tidak menggunakan `kernelstub` (misalnya, pada Ubuntu, Fedora, Debian,
     GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=noaer amdgpu.dcdebugmask=0x410"
     
     ```
+    
 3. Simpan file dan keluar dari editor.
 4. Perbarui GRUB untuk menerapkan perubahan:
 	```bash
