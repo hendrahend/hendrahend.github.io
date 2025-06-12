@@ -11,6 +11,7 @@ Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
 <br>
 {% capture list_items %}
 Pendahuluan
+Mengapa Glitch Terjadi?
 Tutorial
 Sumber & Referensi
 {% endcapture %}
@@ -20,7 +21,25 @@ Sumber & Referensi
 
 ### Pendahuluan
 
-Bagi para pengguna Linux yang memakai GPU AMD, pengalaman visual yang mulus adalah harapan. Namun, tidak jarang kita menemui masalah yang mengganggu seperti "screen glitch" – fenomena visual aneh berupa kedipan, artefak, atau garis-garis yang muncul secara acak pada layar. Meskipun tidak selalu fatal, glitch ini dapat menurunkan kenyamanan penggunaan dan bahkan mengganggu produktivitas, terutama saat bekerja atau menikmati konten multimedia. Artikel ini akan membahas secara tuntas bagaimana cara mengatasi screen glitch ini.
+Here's an enhanced version of your article, incorporating more detail and a smoother flow, while maintaining the technical accuracy.
+title: Fix Screen Glitch di Linux (AMD GPU) tags: [Linux, AMD, GPU, Troubleshooting, Kernel, Display] style: fill color: success description: Fix screen glitch yang kadang muncul di amd gpu
+
+Ditulis Oleh: Hendra Hendriana
+
+&lt;br>
+{% capture list_items %}
+Pendahuluan
+Mengapa Glitch Terjadi?
+Tutorial
+Memverifikasi Perubahan
+Sumber & Referensi
+{% endcapture %}
+{% include elements/list.html title="Daftar Isi" type="toc" %}
+
+&lt;br>
+Pendahuluan
+
+Bagi para pengguna Linux yang mengandalkan GPU AMD, harapan akan pengalaman visual yang mulus dan tanpa hambatan adalah hal yang wajar. Namun, tidak jarang kita dihadapkan pada masalah yang cukup mengganggu yang dikenal sebagai "screen glitch." Fenomena visual ini dapat bermanifestasi dalam berbagai bentuk, mulai dari kedipan sesaat, munculnya artefak visual yang tidak diinginkan, hingga garis-garis aneh yang melintas secara acak pada layar Anda. Meskipun umumnya tidak menyebabkan kerusakan fatal pada sistem, glitch ini secara signifikan dapat menurunkan kenyamanan penggunaan, mengganggu produktivitas saat bekerja, atau mengurangi kualitas pengalaman saat menikmati konten multimedia. Artikel ini hadir untuk membahas secara tuntas bagaimana cara mengatasi screen glitch ini agar Anda dapat kembali menikmati pengalaman Linux yang optimal.
 
 ### Mengapa Glitch Terjadi?
 
@@ -67,7 +86,6 @@ Jika Anda tidak menggunakan `kernelstub` (misalnya, pada Ubuntu, Fedora, Debian,
 	```bash
 	sudo update-grub
 	```
-    
 ### Sumber & Referensi
 
 - Google
