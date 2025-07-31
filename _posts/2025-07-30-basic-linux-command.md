@@ -2,7 +2,7 @@
 title: Basic Linux Command
 tags: [Linux]
 style: fill
-color: danger
+color: primary
 description: Beberapa perintah dasar di Linux.
 ---
 
