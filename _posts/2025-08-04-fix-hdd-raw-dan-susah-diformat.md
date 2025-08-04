@@ -8,9 +8,6 @@ description: FIX HDD.
 
 Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
 
-
-Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
-
 <br>
 {% capture list_items %}
 Pendahuluan
