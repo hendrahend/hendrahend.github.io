@@ -1,11 +1,13 @@
-
 ---
 title: Fix HDD RAW dan Susah di Format
 tags: [Windows]
 style: fill
-color: success
-description: Fix HDD RAW.
+color: warning
+description: FIX HDD.
 ---
+
+Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
+
 
 Ditulis Oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
 
