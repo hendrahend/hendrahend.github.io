@@ -1,6 +1,5 @@
-
 ---
-title: Perbedaan Docker vs Podman: Mana yang Lebih Baik untuk Server?
+title: Perbedaan Docker vs Podman Mana yang Lebih Baik untuk Server?
 tags: [Docker, Podman, Server]
 style: fill
 color: info
