@@ -3,7 +3,7 @@
 title: Perbedaan Docker vs Podman: Mana yang Lebih Baik untuk Server?
 tags: [Docker, Podman, Server]
 style: fill
-color: success
+color: info
 description: Mengulik perbedaan Docker dan Podman.
 ---
 
@@ -17,7 +17,7 @@ Apa itu Docker
 Apa itu Podman  
 Perbedaan Docker dan Podman
 Contoh Perintah Docker dan Podman
-Mana Yang Lebih Baik?
+Mana Yang Lebih Baik
 Penutup
 Referensi  
 {% endcapture %}
@@ -82,7 +82,7 @@ podman run -d  -p  8080:80 nginx
 
 Perintahnya hampir identik sehingga pengguna Docker dapat dengan mudah berpindah ke Podman.
 
-### Mana yang Lebih Baik untuk Server?
+### Mana yang Lebih Baik untuk Server
 
 Pemilihan Docker atau Podman tergantung pada kebutuhan.
 
