@@ -14,10 +14,10 @@ Ditulis oleh: [Hendra Hendriana](https://hendrahend.github.io/about)
 Pendahuluan  
 Apa itu Docker  
 Apa itu Podman  
-Perbedaan Docker dan Podman
-Contoh Perintah Docker dan Podman
-Mana Yang Lebih Baik
-Penutup
+Perbedaan Docker dan Podman  
+Contoh Perintah Docker dan Podman  
+Mana Yang Lebih Baik  
+Penutup  
 Referensi  
 {% endcapture %}
 {% include elements/list.html title="Daftar Isi" type="toc" %}
